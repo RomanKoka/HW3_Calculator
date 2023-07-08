@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let value1 = parseFloat(prompt("Введіть перше число:"));
+let operation = prompt("Введіть операцію (+, -, *, /):");
+let value2 = parseFloat(prompt("Введіть друге число:"));
+let result;
+
+switch (operation) {
+  case '+':
+    result = value1 + value2;
+    alert(result);
+    break;
+  case '-':
+    result = value1 - value2;
+    alert(result);
+    break;
+  case '*':
+    result = value1 * value2;
+    alert(result);
+    break;
+  case '/':
+    if (value2 !== 0) {
+      result = value1 / value2;
+      alert(result);
+      break
+    } 
+    else {
+      alert("На нуль ділити не можна!");
+      break;
+    }
+    break;
+  default:
+  if(result == undefined){
+    alert("Ви ввели неправильну операцію!");
+    break;
+}
+  
+}
+
+ </script>
+</body>
+</html>
